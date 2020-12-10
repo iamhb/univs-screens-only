@@ -14,6 +14,7 @@ import { TeacherProfileComponent } from './teacher-profile/teacher-profile.compo
 import { TransportComponent } from './transport/transport.component';
 import { NoticeBoardComponent } from './notice-board/notice-board.component';
 import { TransportListComponent } from './transport-list/transport-list.component';
+import { ClassRoutineComponent } from './class-routine/class-routine.component';
 @NgModule({
     declarations: [
         AppComponent,
@@ -27,7 +28,8 @@ import { TransportListComponent } from './transport-list/transport-list.componen
         TeacherProfileComponent,
         TransportComponent,
         NoticeBoardComponent,
-        TransportListComponent
+        TransportListComponent,
+        ClassRoutineComponent
     ],
     imports: [
         BrowserModule,

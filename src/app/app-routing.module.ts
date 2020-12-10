@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { AttendenceListComponent } from './attendence-list/attendence-list.component';
+import { ClassRoutineComponent } from './class-routine/class-routine.component';
 import { NoticeBoardComponent } from './notice-board/notice-board.component';
 import { ParentDashboardComponent } from './parent-dashboard/parent-dashboard.component';
 import { StudDashboardComponent } from './stud-dashboard/stud-dashboard.component';
@@ -25,6 +26,7 @@ const routes: Routes = [
     { path: 'teacher-profile', component: TeacherProfileComponent },
     { path: 'transport', component: TransportComponent },
     { path: 'transport-list', component: TransportListComponent },
+    {path:'class-routine',component:ClassRoutineComponent},
 ];
 
 @NgModule({
