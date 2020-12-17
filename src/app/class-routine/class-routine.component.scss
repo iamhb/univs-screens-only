@@ -1,14 +1,44 @@
-.card{
-    .card-body{
 .row{
-    .col-3{
-        .input{
-            width: 20vw;
-            background-color: yellow;
-            color: yellow   ;
+    .col{
+        .card{
+            .card-body{
+                .row:nth-child(4){
+                    .btn1{
+                        background-color:#fdae26;
+                        color:white ;
+                    }
+                    .btn1:hover{
+                        background-color: #042954;
+                    }
+                    .btn2{
+                        background-color: #042954;
+                        color: white;
+                    }
+                    .btn2:hover{
+                        background-color:#fdae26;
+                    }
+                }
+            }
         }
     }
 }
-
+.row:nth-child(2){
+    .col{
+        .card{
+            .card-body{
+                .row{
+                    .col-3{
+                        button{
+                            background-color: #fdae26;
+                            color: white;
+                        }
+                     
+                    }
+                }
+            }
+        }
     }
+}
+input{
+    background-color: #d1d1d1;
 }

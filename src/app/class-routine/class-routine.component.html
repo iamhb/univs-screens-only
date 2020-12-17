@@ -1,40 +1,50 @@
 <!-- Add Class Routine -->
 <div class="row">
-  <div class="col">
-    <div class="card">
-      <div class="card-body">
-        <div class="row">
-          <div class="col-10">
-            <h4>Add Class Routine</h4>
-          </div>
-          <div class="col-2 d-flex justify-content-end">icon</div>
-        </div>
-        <!-- fileds -->
-        <div class="row">
-          <div class="col-6">
-            <div class="form-group">
-              <label>Subject Name *</label>
-              <input type="text" class="form-control" [(ngModel)]="classrouteObj.subjectName" />
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="form-group">
-              <label>Subject Type *</label>
-              <input type="text" class="form-control" [(ngModel)]="classrouteObj.subjectType"  />
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6">
-            <div class="form-group">
-              <label>Select Class *</label>
-              <input type="text" class="form-control" [(ngModel)]="classrouteObj.selectClass" />
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="form-group">
-              <label>Select Code</label>
-              <input type="text" class="form-control" [(ngModel)]="classrouteObj.selectCode" />
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-10">
+                        <h4>Add Class Routine</h4>
+                    </div>
+                    <div class="col-2 d-flex justify-content-end">
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <!-- fileds -->
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label>Subject Name *</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label>Subject Type *</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label>Select Class *</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label>Select Code</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <button class="btn ml-4 btn1">Save</button>
+                    <button class="btn ml-4 btn2">Rest</button>
+
+                </div>
             </div>
           </div>
         </div>
@@ -48,41 +58,89 @@
 </div>
 <!-- Class Routine -->
 <div class="row mt-4">
-  <div class="col">
-    <div class="card">
-      <div class="card-body">
-        <div class="row">
-          <div class="col-10">
-            <h4>Class Routine</h4>
-          </div>
-          <div class="col-2 d-flex justify-content-end">icon</div>
-        </div>
-        <!-- Input fileds -->
-        <div class="row">
-          <div class="col-3">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Search by Day..."
-            />
-          </div>
-          <div class="col-3">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Search by Class..."
-            />
-          </div>
-          <div class="col-3">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Search by Section..."
-            />
-          </div>
-          <div class="col-3">
-            <button class="btn">Search</button>
-          </div>
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-10">
+                        <h4>Class Routine</h4>
+                    </div>
+                    <div class="col-2 d-flex justify-content-end">
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <!-- Input fileds -->
+                <div class="row">
+                    <div class="col-3">
+                        <input type="text" class="form-control" placeholder="Search by Day...">
+                    </div>
+                    <div class="col-3">
+                        <input type="text" class="form-control" placeholder="Search by Class...">
+                    </div>
+                    <div class="col-3">
+                        <input type="text" class="form-control" placeholder="Search by Section...">
+                    </div>
+                    <div class="col-3">
+                        <button class="btn">SEARCH</button>
+                    </div>
+                </div>
+                <!-- table -->
+                <div class="row mt-4">
+                    <div class="col">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Day</th>
+                                    <th scope="col">Class</th>
+                                    <th scope="col">Subject</th>
+                                    <th scope="col">Section</th>
+                                    <th scope="col">Teacher</th>
+                                    <th scope="col">Time</th>
+                                    <th scope="col">Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Friday</td>
+                                    <td>4</td>
+                                    <td>English</td>
+                                    <td>A</td>
+                                    <td>Mike John</td>
+                                    <td>10.00 am-11.00 am</td>
+                                    <td>20/06/2019</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday</td>
+                                    <td>4</td>
+                                    <td>English</td>
+                                    <td>A</td>
+                                    <td>Mike John</td>
+                                    <td>10.00 am-11.00 am</td>
+                                    <td>20/06/2019</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday</td>
+                                    <td>4</td>
+                                    <td>English</td>
+                                    <td>A</td>
+                                    <td>Mike John</td>
+                                    <td>10.00 am-11.00 am</td>
+                                    <td>20/06/2019</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday</td>
+                                    <td>4</td>
+                                    <td>English</td>
+                                    <td>A</td>
+                                    <td>Mike John</td>
+                                    <td>10.00 am-11.00 am</td>
+                                    <td>20/06/2019</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- table -->
         <div class="row mt-4">

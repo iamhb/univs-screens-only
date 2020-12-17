@@ -17,6 +17,7 @@ import { TransportListComponent } from './transport-list/transport-list.componen
 import { ClassRoutineComponent } from './class-routine/class-routine.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { AddStudentComponent } from './add-student/add-student.component';
 @NgModule({
     declarations: [
         AppComponent,
@@ -31,7 +32,8 @@ import { FormsModule } from '@angular/forms';
         TransportComponent,
         NoticeBoardComponent,
         TransportListComponent,
-        ClassRoutineComponent
+        ClassRoutineComponent,
+        AddStudentComponent
     ],
     imports: [
         BrowserModule,

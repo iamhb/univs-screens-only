@@ -1,0 +1,33 @@
+.row{
+    .col{
+        .card{
+            .card-body{
+                .row:nth-child(6){
+.col{
+    .btn1{
+        background-color: #fdae26;
+        color: white;
+    }
+    .btn1:hover{
+        background-color:#042954;
+        
+    }
+    .btn2{
+        background-color: #042954;
+        color: white;
+    }
+    .btn2:hover{
+         background-color: #fdae26;
+    }
+}
+                }
+            }
+        }
+    }
+}
+
+input,
+textarea,
+select{
+    background-color: #d1d1d1;
+}
