@@ -10,34 +10,34 @@
       <div class="row">
         <div class="col">
           <label>Route Names</label>
-          <input type="text" class="form-control" />
+          <input type="text" [(ngModel)]="transportObj.routeNames" class="form-control" />
         </div>
         <div class="col">
           <label>Vehicle Number</label>
-          <input type="text" class="form-control" />
+          <input type="text" [(ngModel)]="transportObj.vehicleNumber" class="form-control" />
         </div>
         <div class="col">
           <label>Driver Name</label>
-          <input type="text" class="form-control" />
+          <input type="text" [(ngModel)]="transportObj.driverNames" class="form-control" />
         </div>
       </div>
       <!-- names end -->
       <div class="row">
         <div class="col-sm-4">
           <label>License Number</label>
-          <input type="text" class="form-control" />
+          <input type="text" [(ngModel)]="transportObj.licenseNumber" class="form-control" />
         </div>
         <div class="col-sm-4">
           <label>Phone Number</label>
-          <input type="text" class="form-control" />
+          <input type="text" [(ngModel)]="transportObj.phoneNumber" class="form-control" />
         </div>
       </div>
       <br />
       <!-- number end -->
       <div class="row">
         <div class="col">
-          <button class="btn btn-outline-warning">Save</button>
-          <button type="button" class="btn btn-outline-primary ml-3">
+          <button (click)="transportForm()" class="btn btn-outline-warning">Save</button>
+          <button (click)="reset(useIndex)" class="btn btn-outline-primary ml-3">
             Reset
           </button>
         </div>

@@ -15,6 +15,8 @@ import { TransportComponent } from './transport/transport.component';
 import { NoticeBoardComponent } from './notice-board/notice-board.component';
 import { TransportListComponent } from './transport-list/transport-list.component';
 import { ClassRoutineComponent } from './class-routine/class-routine.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 @NgModule({
     declarations: [
         AppComponent,
@@ -33,7 +35,9 @@ import { ClassRoutineComponent } from './class-routine/class-routine.component';
     ],
     imports: [
         BrowserModule,
+        HttpClientModule,
         AppRoutingModule,
+        FormsModule
     ],
     providers: [],
     bootstrap: [AppComponent]

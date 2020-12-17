@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TransportListComponent implements OnInit {
 
+  transportlistObj = {
+    searchRoute: "",
+    searchcarNumber: "",
+    searchPhone: "",
+  }
+
   constructor() { }
 
   ngOnInit() {
   }
-
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-transport',
@@ -7,9 +8,45 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TransportComponent implements OnInit {
 
-  constructor() { }
+
+transportObj = {
+routeNames   :"",
+vehicleNumber:null,
+driverNames  :"",
+licenseNumber:null,
+phoneNumber  :null
+
+
+}
+
+  constructor( public api:ApiService) { }
 
   ngOnInit() {
   }
+transportForm(){
+  
+  console.log(this.transportObj)
+  this.api.inserttransport(this.transportObj).subscribe((data: any) => {
+    console.log(data)
+  })
+
+}
+
+reset(){
+
+  this.transportObj = {
+    routeNames: "",
+    vehicleNumber: null,
+    driverNames: "",
+    licenseNumber: null,
+    phoneNumber: null
+
+
+  }
+
+
+}
+
+
 
 }
