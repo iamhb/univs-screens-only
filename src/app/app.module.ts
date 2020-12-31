@@ -23,6 +23,7 @@ import { AcademicYearComponent } from './academic-year/academic-year.component';
 import { CoursesComponent } from './courses/courses.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { DepartmentComponent } from './department/department.component';
 @NgModule({
     declarations: [
         AppComponent,
@@ -43,7 +44,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
         AcademicYearComponent,
         CoursesComponent,
         SignInComponent,
-        SignUpComponent
+        SignUpComponent,
+        DepartmentComponent
     ],
     imports: [
         BrowserModule,
