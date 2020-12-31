@@ -16,13 +16,13 @@
                     <div class="col-6">
                         <div class="form-group">
                             <label>Subject Name *</label>
-                            <input type="text" class="form-control">
+                            <input type="text" [(ngModel)]="classrouteObj.subjectName" class="form-control">
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="form-group">
                             <label>Subject Type *</label>
-                            <input type="text" class="form-control">
+                            <input type="text" [(ngModel)]=" classrouteObj.subjectType" class="form-control">
                         </div>
                     </div>
                 </div>
@@ -30,32 +30,26 @@
                     <div class="col-6">
                         <div class="form-group">
                             <label>Select Class *</label>
-                            <input type="text" class="form-control">
+                            <input type="text" [(ngModel)]=" classrouteObj.selectClass" class="form-control">
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="form-group">
                             <label>Select Code</label>
-                            <input type="text" class="form-control">
+                            <input type="text" [(ngModel)]=" classrouteObj.selectCode" class="form-control">
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <button class="btn ml-4 btn1">Save</button>
-                    <button class="btn ml-4 btn2">Rest</button>
-
-                </div>
-            </div>
+          </div>
+          <div class="row">
+            <button (click)="classrouteForm()"  class="btn ml-4 btn1">Save</button>
+            <button (click)="Reset()" class="btn ml-4 btn2">Reset</button>
           </div>
         </div>
-        <div class="row">
-          <button (click)="classrouteForm()"  class="btn ml-4">Save</button>
-          <button (click)="Reset()" class="btn ml-4">Reset</button>
-        </div>
       </div>
-    </div>
-  </div>
-</div>
+            </div>
+
+      </div>
+   
 <!-- Class Routine -->
 <div class="row mt-4">
     <div class="col">
@@ -142,63 +136,6 @@
                 </div>
             </div>
         </div>
-        <!-- table -->
-        <div class="row mt-4">
-          <div class="col">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">Day</th>
-                  <th scope="col">Class</th>
-                  <th scope="col">Subject</th>
-                  <th scope="col">Section</th>
-                  <th scope="col">Teacher</th>
-                  <th scope="col">Time</th>
-                  <th scope="col">Date</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Friday</td>
-                  <td>4</td>
-                  <td>English</td>
-                  <td>A</td>
-                  <td>Mike John</td>
-                  <td>10.00 am-11.00 am</td>
-                  <td>20/06/2019</td>
-                </tr>
-                <tr>
-                  <td>Friday</td>
-                  <td>4</td>
-                  <td>English</td>
-                  <td>A</td>
-                  <td>Mike John</td>
-                  <td>10.00 am-11.00 am</td>
-                  <td>20/06/2019</td>
-                </tr>
-                <tr>
-                  <td>Friday</td>
-                  <td>4</td>
-                  <td>English</td>
-                  <td>A</td>
-                  <td>Mike John</td>
-                  <td>10.00 am-11.00 am</td>
-                  <td>20/06/2019</td>
-                </tr>
-                <tr>
-                  <td>Friday</td>
-                  <td>4</td>
-                  <td>English</td>
-                  <td>A</td>
-                  <td>Mike John</td>
-                  <td>10.00 am-11.00 am</td>
-                  <td>20/06/2019</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
       </div>
     </div>
-  </div>
-</div>
+  
