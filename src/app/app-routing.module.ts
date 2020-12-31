@@ -35,7 +35,7 @@ const routes: Routes = [
     { path: 'transport-list', component: TransportListComponent },
     { path: 'class-routine', component: ClassRoutineComponent },
     { path: 'add-stud', component: AddStudentComponent },
-    { path: 'landing', component: LandingComponent },
+    // { path: 'landing', component: LandingComponent },
     { path: 'sign-in', component: SignInComponent },
     { path: 'sign-up', component: SignUpComponent },
     { path: 'academic-year', component: AcademicYearComponent },
