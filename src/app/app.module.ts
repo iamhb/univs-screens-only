@@ -18,6 +18,11 @@ import { ClassRoutineComponent } from './class-routine/class-routine.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { AddStudentComponent } from './add-student/add-student.component';
+import { LandingComponent } from './landing/landing.component';
+import { AcademicYearComponent } from './academic-year/academic-year.component';
+import { CoursesComponent } from './courses/courses.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 @NgModule({
     declarations: [
         AppComponent,
@@ -33,7 +38,12 @@ import { AddStudentComponent } from './add-student/add-student.component';
         NoticeBoardComponent,
         TransportListComponent,
         ClassRoutineComponent,
-        AddStudentComponent
+        AddStudentComponent,
+        LandingComponent,
+        AcademicYearComponent,
+        CoursesComponent,
+        SignInComponent,
+        SignUpComponent
     ],
     imports: [
         BrowserModule,
